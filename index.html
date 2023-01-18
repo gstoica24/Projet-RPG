@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>The adventures of the Dark Knight</h1>
+    <main>
+      <section id="inventer">
+        <div id="player">
+          <div class="potionbar">
+            <span>xx</span>
+          </div>
+        </div>
+      </section>
+      <section id="caracter">
+        <div id="player">
+          <div class="healthbar">
+            <span>xx</span>
+          </div>
+          <img
+            id="image0"
+            src="./personage/hero.gif"
+            height="329"
+            width="380"
+            alt=""
+          />
+        </div>
+        <div id="enemy">
+          <div class="healthbar">
+            <span>xx</span>
+          </div>
+          <img src="./personage/enemy1.gif" height="329" width="380" alt="" />
+        </div>
+      </section>
+      <section id="action">
+        <h3>Actions</h3>
+        <button onclick="takeBoostPotion()">Take Boost Potion 🍸</button>
+        <button onclick="takeHealthPotion(miniPotion)">
+          Take small potion 🍸
+        </button>
+        <button onclick="takeHealthPotion(maxiPotion)">
+          Take big potion 🍺
+        </button>
+        <button onclick="attackWithHands()">Player attack 👊</button>
+        <button onclick="attackWithSword()">Player attack ⚔️</button>
+        <button onclick="enemyAttack()">Enemy attack 🔥</button>
+        <button onclick="attackFireBall()">FireBall attack 🔥</button>
+        <button onclick="attackTheftOfLife()">Theft of life 🔥</button>
+        <button id="myBtn" onclick="comboAttack()">Combo Attack 😡</button>
+      </section>
+
+      <section id="log">
+        <span></span>
+      </section>
+
+      <div id="bSound">
+        <audio controls autoplay>
+          <source
+            src="./background/Dark Medieval Music • SUMMON OF THE FALLENS by Mighty Pixel.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+
+        <audio controls id="audio-punch">
+          <source src="./effect/Punch sound effect.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-fireball">
+          <source src="./effect/Battle sfx [fire ball].mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-boost">
+          <source src="./effect/Boost.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-potion">
+          <source src="./effect/magic_spell_03-99828.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-sword">
+          <source src="./effect/Sword Draw Sound Effect.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-death-hero">
+          <source src="./effect/scramHero.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-enemy-attack">
+          <source src="./effect/goblin-growl-100279.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-death-enemy">
+          <source src="./effect/death-49098.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-death-last-boss">
+          <source src="./effect/screamLastBoss.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls id="audio-stealth">
+          <source src="./effect/Stealth sound.mp3" type="audio/mp3" />
+        </audio>
+      </div>
+    </main>
+    <script src="./index.js" defer></script>
+  </body>
+</html>

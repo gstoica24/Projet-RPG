@@ -1,0 +1,111 @@
+/*
+Palette de couleurs :
+https://coolors.co/272838-f3de8a-eb9486-7e7f9a-f9f8f8
+*/
+body {
+  background-image: url(./background/background1+.png)  ;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+main {
+  background: rgba(128, 128, 128, 0.118);
+  color: aqua;
+  
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap'); 
+
+h1 {
+  background: rgba(223, 214, 214, 0.537);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  color: rgb(24, 1, 1);
+  text-shadow: 5px 3px 0px #510303da;
+  text-align: center;
+  font-family: 'Moon Dance', cursive;
+}
+
+#inventer {
+  background:rgb(107, 35, 35);
+}
+
+#inventer .potionbar{
+  position: absolute;
+  left: 3%;
+  bottom: 10%;
+  width: 50px;
+}
+
+#inventer .potionbar span {
+  color: gold;
+  font-size: 20px;
+}
+  
+#caracter {
+ 
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;;
+}
+
+#player #enemy{
+  height: 50px;
+  border-radius: 10px;
+}
+ 
+.healthbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: rgb(16, 16, 16);
+}
+
+.healthbar span {
+  width: 90%;
+  border-radius: 10px;
+  background: yellowgreen;
+  transition: width 1s;
+}
+#player img{
+  transform: scaleX(-1);
+}
+
+#enemy img {
+  transform: scaleX(-1);
+}
+
+
+
+
+#log{
+  
+  color: yellowgreen;
+  display: flex
+ 
+}
+
+#action {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#action button{
+  background: darkolivegreen;
+  border-radius: 10px;
+  color: aqua;
+}
+
+#action button:hover{
+  background: rgb(127, 151, 127);
+}
+
+
+audio{
+  display: none;
+}
